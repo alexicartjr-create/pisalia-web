@@ -3,17 +3,42 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pisalia: companys de pis</title>
-<meta name="description" content="Pisalia és una app per trobar habitació i companys de pis a Espanya. Política de privacitat, esborrament del compte, suport i dades del titular.">
+<title>Pisalia: habitació i companys de pis per afinitat</title>
+<meta name="description" content="Busca habitació o companys de pis i mira la vostra afinitat de convivència abans d’escriure. Pis junts, visites i avisos contra estafes. Gratis.">
 <meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F2F2F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://pisalia.app/inici.html">
+<link rel="alternate" hreflang="es" href="https://pisalia.app/">
+<link rel="alternate" hreflang="ca" href="https://pisalia.app/inici.html">
+<link rel="alternate" hreflang="en" href="https://pisalia.app/home.html">
+<link rel="alternate" hreflang="x-default" href="https://pisalia.app/">
 <link rel="icon" href="icono.svg" type="image/svg+xml">
+<link rel="icon" href="img/icono-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="img/icono-180.png">
 <link rel="stylesheet" href="estilos.css">
-<link rel="alternate" hreflang="es" href="index.html">
-<link rel="alternate" hreflang="ca" href="inici.html">
-<link rel="alternate" hreflang="en" href="home.html">
+<link rel="preload" as="image" href="img/capturas/ca/02-afinidad.webp" type="image/webp">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pisalia">
+<meta property="og:title" content="Pisalia: habitació i companys de pis per afinitat">
+<meta property="og:description" content="Busca habitació o companys de pis i mira la vostra afinitat de convivència abans d’escriure. Pis junts, visites i avisos contra estafes. Gratis.">
+<meta property="og:url" content="https://pisalia.app/inici.html">
+<meta property="og:image" content="https://pisalia.app/img/og-ca.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pisalia: troba habitació i companys de pis per afinitat. Captura de la llista de persones amb la seva afinitat.">
+<meta property="og:locale" content="ca_ES">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pisalia: habitació i companys de pis per afinitat">
+<meta name="twitter:description" content="Busca habitació o companys de pis i mira la vostra afinitat de convivència abans d’escriure. Pis junts, visites i avisos contra estafes. Gratis.">
+<meta name="twitter:image" content="https://pisalia.app/img/og-ca.png">
+<meta name="twitter:image:alt" content="Pisalia: troba habitació i companys de pis per afinitat. Captura de la llista de persones amb la seva afinitat.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://pisalia.app/#web", "name": "Pisalia", "url": "https://pisalia.app/", "inLanguage": ["es", "ca", "en"]}, {"@type": "MobileApplication", "@id": "https://pisalia.app/#app", "name": "Pisalia", "url": "https://pisalia.app/inici.html", "description": "Busca habitació o companys de pis i mira la vostra afinitat de convivència abans d’escriure. Pis junts, visites i avisos contra estafes. Gratis.", "operatingSystem": "Android", "applicationCategory": "LifestyleApplication", "inLanguage": ["es", "ca", "en"], "image": "https://pisalia.app/img/icono-192.png", "screenshot": "https://pisalia.app/img/capturas/ca/02-afinidad.webp", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}]}</script>
 </head>
-<body>
+<body class="inicio">
 <a class="saltar" href="#contenido">Salta al contingut</a>
 <header class="cabecera">
 <div class="envoltura">
@@ -25,15 +50,114 @@
 </header>
 <main id="contenido" tabindex="-1">
 <div class="envoltura">
-<section class="portada">
-<svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><rect width="120" height="120" rx="27" fill="#E8264F"/><path d="M24 56 60 27l36 29" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="47" cy="64" r="10.5" fill="#FFFFFF"/><path d="M29 94c2.4-11.5 9-17.5 18-17.5s15.6 6 18 17.5z" fill="#FFFFFF"/><circle cx="73" cy="64" r="10.5" fill="#FFC2CF"/><path d="M55 94c2.4-11.5 9-17.5 18-17.5s15.6 6 18 17.5z" fill="#FFC2CF"/></svg>
-<h1>Pisalia</h1>
-<p class="entradilla">L’app per trobar habitació i companys de pis que encaixin amb la teva manera de viure. En castellà, català i anglès.</p>
+<section class="heroe" aria-labelledby="titulo">
+<div class="heroe-texto">
+<p class="antetitulo">L’app per compartir pis</p>
+<h1 id="titulo">Troba habitació i gent amb qui conviure bé</h1>
+<p class="entradilla">Fes el test de convivència i mira la teva afinitat amb cada persona abans d’escriure-li. Per a gent de 18 a 30 anys que busca habitació o algú per al seu pis. Comencem per Catalunya.</p>
+<ul class="sellos" aria-label="En resum"><li>Gratis i sense publicitat</li><li>En català, castellà i anglès</li><li>Només per a majors de 18 anys</li></ul>
+<div class="acciones" id="google-play">
+<!-- GOOGLE PLAY: lo pone scripts/web-portada/portada.py (PLAY_URL). Sin dirección, «Próximamente», sin enlace ni insignia. -->
+<p class="pronto"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span><strong>Aviat a Google Play</strong><span>Primer a Android. A iPhone, més endavant.</span></span></p>
+<a class="boton" href="mailto:info@pisalia.app?subject=Vull%20provar%20la%20beta%20de%20Pisalia">Vull provar la beta</a>
+</div>
+<p class="nota-cta">Aviat obrirem una prova tancada a Android per a majors de 18 anys a Espanya: escriu-nos i t’avisarem.</p>
+</div>
+<div class="heroe-img">
+<img src="img/capturas/ca/02-afinidad.webp" alt="Pantalla de Persones a Android: gent que busca pis a Granollers, cada persona amb el seu percentatge d’afinitat i el que teniu en comú. Perfils d’exemple." width="540" height="960" fetchpriority="high" decoding="async">
+</div>
 </section>
 <div class="aviso beta">
-<p><strong>Pisalia és en fase beta.</strong> La resta de perfils i anuncis són d’exemple, les verificacions són simulades i les teves dades només es desen al teu mòbil: Pisalia encara no té servidors. Només per a majors de 18 anys.</p>
+<p><strong>Pisalia és en fase beta.</strong> La resta de perfils i anuncis són d’exemple, les comprovacions són simulades i les teves dades només es desen al teu mòbil: Pisalia encara no té servidors.</p>
 </div>
-<h2>Informació i ajuda</h2>
+
+<section class="seccion" id="como-funciona" aria-labelledby="como">
+<h2 id="como">Com funciona, en 3 passos</h2>
+<ol class="pasos grandes">
+<li><strong>Tria què busques.</strong> Una habitació, persones per compartir pis, algú per a l’habitació lliure del teu pis o llogaters per al teu pis.</li>
+<li><strong>Fes el test de convivència.</strong> 12 preguntes i una d’opcional sobre horaris, ordre, neteja, visites, soroll, mascotes o pressupost. Marca el que és molt important per a tu i el que t’és igual.</li>
+<li><strong>Mira la teva afinitat i escriu.</strong> Cada persona surt amb la vostra afinitat i el que teniu en comú, i cada anunci, amb quantes de les teves preferències compleix. Envia una sol·licitud: si l’accepten, feu match i s’obre el xat.</li>
+</ol>
+</section>
+
+<section class="seccion" aria-labelledby="para">
+<h2 id="para">Per a qui busca i per a qui anuncia</h2>
+<div class="dos">
+<div class="tarjeta">
+<h3>Si busques habitació o companys de pis</h3>
+<ul class="lista">
+<li>Persones que busquen pis a prop teu, amb la vostra afinitat i el que teniu en comú.</li>
+<li>Habitacions en llista o al mapa, amb filtres per requisits i preferències.</li>
+<li>El cost real d’entrar a cada anunci: lloguer, despeses, fiança i cost inicial estimat. El que falta surt com a «No indicat».</li>
+<li>Visites: tria una de les hores que ofereix qui anuncia o proposa’n una altra.</li>
+<li><strong>Pis junts:</strong> amb algú amb qui tens match, busqueu pis amb el vostre pressupost i zones, voteu els pisos, comenteu-los i envieu una sol·licitud conjunta.</li>
+</ul>
+</div>
+<div class="tarjeta">
+<h3>Si llogues una habitació o un pis</h3>
+<ul class="lista">
+<li>Publica la teva habitació o el teu pis amb fotos. Posa’l en pausa, renova’l o marca’l com a llogat.</li>
+<li>Mira cada candidat amb la seva afinitat i els requisits que compleix, i accepta’l o rebutja’l.</li>
+<li>Agenda: ofereix les hores en què es pot visitar el pis i organitza les visites.</li>
+<li>En publicar, l’app no deixa demanar el que la llei no permet cobrar al llogater, com els honoraris de l’agència.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="seccion" aria-labelledby="capturas">
+<h2 id="capturas">Així és Pisalia</h2>
+<p class="nota" id="nota-capturas">Captures de l’app a Android, amb perfils i anuncis d’exemple de la beta.</p>
+<div class="carrusel" role="region" aria-label="Captures de l’app (llisca per veure’n més)" tabindex="0">
+<ul>
+<li><img src="img/capturas/ca/01-estilo.webp" alt="«Descobreix el teu estil de convivència»: el final del test, amb el teu estil i tres trets, i les primeres habitacions amb la seva afinitat." width="540" height="960" loading="lazy" decoding="async"></li>
+<li><img src="img/capturas/ca/03-costes.webp" alt="«El cost real d’entrar, abans de visitar»: lloguer, despeses, fiança, honoraris i cost inicial estimat d’un anunci, amb la mitjana de la zona." width="540" height="960" loading="lazy" decoding="async"></li>
+<li><img src="img/capturas/ca/04-estafa.webp" alt="«T’avisem si un missatge sembla una estafa»: al xat, qui anuncia demana una paga i senyal abans de la visita i l’app avisa que demana diners abans de veure el pis." width="540" height="960" loading="lazy" decoding="async"></li>
+<li><img src="img/capturas/ca/05-visita.webp" alt="«Queda per a la visita sense donar el teu telèfon»: un xat amb la visita confirmada i el consell de no pagar res abans de veure el pis i signar el contracte." width="540" height="960" loading="lazy" decoding="async"></li>
+<li><img src="img/capturas/ca/06-piso-juntos.webp" alt="«Busqueu pis junts i voteu els que us agraden»: pisos desats per dues persones, amb el vot de cadascuna, comentaris i l’avís que un passa del pressupost." width="540" height="960" loading="lazy" decoding="async"></li>
+<li><img src="img/capturas/ca/07-solicitudes.webp" alt="«Llogues? Mira quins requisits compleix cada persona»: les sol·licituds d’un propietari, amb els requisits que compleix cada candidat i una visita proposada." width="540" height="960" loading="lazy" decoding="async"></li>
+<li><img src="img/capturas/ca/08-idiomas.webp" alt="«En català, castellà i anglès»: el perfil d’una persona en mode fosc i amb l’app en català, amb la vostra afinitat i la seva explicació." width="540" height="960" loading="lazy" decoding="async"></li>
+</ul>
+</div>
+</section>
+
+<section class="seccion" id="seguridad" aria-labelledby="seg">
+<h2 id="seg">Seguretat i confiança</h2>
+<ul class="grupo">
+<li><h3>Avisos contra estafes al xat</h3><p>El xat t’avisa si un missatge s’assembla a una estafa típica, com demanar diners abans de la visita, o si estàs a punt d’enviar un DNI, un IBAN o una targeta.</p></li>
+<li><h3>Llista de seguretat abans de pagar</h3><p>Sis comprovacions que marques tu abans de pagar res, amb un consell per a cadascuna.</p></li>
+<li><h3>Denunciar i bloquejar</h3><p>Des de qualsevol perfil, anunci o xat, sense avisar l’altra persona. A la beta, les denúncies es queden al teu mòbil i encara no les revisa ningú: si vols que en vegem una, ens la pots enviar per correu.</p></li>
+<li><h3>Revisió dels anuncis</h3><p>Quan Pisalia tingui servidor, una persona revisarà cada anunci abans de publicar-lo. A la beta, els anuncis que veus són d’exemple i els teus es queden al teu mòbil.</p></li>
+<li><h3>Pisalia no cobra ni gestiona pagaments</h3><p>Ni lloguers, ni fiances, ni senyals. No paguis res sense haver vist el pis i signat el contracte.</p></li>
+<li><h3>El teu telèfon, per a tu</h3><p>Parleu pel xat de Pisalia i quedeu per a la visita sense donar el número.</p></li>
+</ul>
+<p class="nota">Llegeix els <a href="suport.html#seguretat">consells contra les estafes de lloguer</a>.</p>
+<h3 class="subtitulo">Les teves dades</h3>
+<div class="tarjeta"><p>A la beta, el que poses a l’app es desa només al teu mòbil. Pisalia no té publicitat, i aquest web no fa servir galetes ni analítica. Ho explica la <a href="privacitat.html">política de privacitat</a>.</p></div>
+</section>
+
+<section class="seccion" id="preguntas" aria-labelledby="faq">
+<h2 id="faq">Preguntes freqüents</h2>
+<div class="preguntas">
+<details><summary>Quant costa?</summary><p>Res. Pisalia és gratis i no té publicitat.</p></details>
+<details><summary>Quan la puc descarregar?</summary><p>Pisalia sortirà primer a Android, a Google Play. Aviat obrirem una prova tancada: si tens un mòbil Android, ets major de 18 anys i vius a Espanya, escriu-nos a <a href="mailto:info@pisalia.app?subject=Consulta%20sobre%20Pisalia">info@pisalia.app</a> i t’avisarem quan la puguis provar. La versió per a iPhone arribarà més endavant.</p></details>
+<details><summary>On funciona?</summary><p>Pisalia és per a tot Espanya, però comencem per Catalunya. A la beta, els perfils i anuncis d’exemple són a la província de Barcelona.</p></details>
+<details><summary>Què és l’afinitat?</summary><p>Un percentatge que compara les vostres respostes al test de convivència i té en compte el que cada persona marca com a molt important. T’explica el que teniu en comú i en què us diferencieu. És una orientació, no una garantia.</p></details>
+<details><summary>Què és Pis junts?</summary><p>Si has fet match amb algú i voleu compartir pis, podeu buscar alhora: amb el vostre pressupost, zones i dates, deseu pisos, els voteu, els comenteu i envieu una sol·licitud conjunta a qui anuncia.</p></details>
+<details><summary>Pisalia cobra o gestiona el lloguer?</summary><p>No. Pisalia només posa en contacte les persones: no cobra ni gestiona lloguers, fiances ni senyals, i no és part del contracte.</p></details>
+<details><summary>Qui la pot fer servir?</summary><p>Només majors de 18 anys. Està pensada sobretot per a gent jove que estudia o treballa i busca habitació o companys de pis.</p></details>
+<details><summary>Com esborro el meu compte?</summary><p>A l’app: <strong>Perfil</strong> → <strong>Elimina el meu compte</strong>. Si ja no tens l’app, ho pots demanar per correu: ho expliquem a <a href="esborrar-compte.html">Esborrar el teu compte</a>.</p></details>
+</div>
+<p class="nota">Més dubtes? Mira el <a href="suport.html">suport</a> o escriu-nos a <a href="mailto:info@pisalia.app?subject=Consulta%20sobre%20Pisalia">info@pisalia.app</a>.</p>
+</section>
+
+<section class="seccion cierre" aria-labelledby="cierre">
+<h2 id="cierre">Vols provar-la abans que ningú?</h2>
+<p>Escriu-nos a <a href="mailto:info@pisalia.app?subject=Consulta%20sobre%20Pisalia">info@pisalia.app</a> des del correu del teu compte de Google i t’avisarem quan obrim la prova tancada d’Android.</p>
+</section>
+
+<section class="seccion" aria-labelledby="ayuda">
+<h2 id="ayuda">Informació i ajuda</h2>
 <ul class="enlaces">
 <li><a href="privacitat.html"><strong>Política de privacitat</strong><span>Quines dades fa servir Pisalia i quins són els teus drets</span></a></li>
 <li><a href="esborrar-compte.html"><strong>Esborrar el teu compte</strong><span>Des de l’app o demanant-ho per correu, sense l’app</span></a></li>
@@ -41,7 +165,7 @@
 <li><a href="condicions.html"><strong>Condicions d’ús i normes</strong><span>El que acceptes en fer servir Pisalia</span></a></li>
 <li><a href="avis-legal.html"><strong>Dades del titular</strong><span>Qui és el titular de Pisalia i com contactar-hi</span></a></li>
 </ul>
-<p class="nota">Pisalia és una app per a Android (Google Play) i iPhone (App Store).</p>
+</section>
 </div>
 </main>
 <footer class="pie">

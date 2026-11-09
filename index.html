@@ -3,17 +3,42 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pisalia: compañeros de piso</title>
-<meta name="description" content="Pisalia es una app para encontrar habitación y compañeros de piso en España. Política de privacidad, borrado de cuenta, soporte y datos del titular.">
+<title>Pisalia: habitación y compañeros de piso por afinidad</title>
+<meta name="description" content="Busca habitación o compañeros de piso y mira vuestra afinidad de convivencia antes de escribir. Piso juntos, visitas y avisos contra estafas. Gratis.">
 <meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F2F2F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <meta name="referrer" content="no-referrer">
+<link rel="canonical" href="https://pisalia.app/">
+<link rel="alternate" hreflang="es" href="https://pisalia.app/">
+<link rel="alternate" hreflang="ca" href="https://pisalia.app/inici.html">
+<link rel="alternate" hreflang="en" href="https://pisalia.app/home.html">
+<link rel="alternate" hreflang="x-default" href="https://pisalia.app/">
 <link rel="icon" href="icono.svg" type="image/svg+xml">
+<link rel="icon" href="img/icono-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="img/icono-180.png">
 <link rel="stylesheet" href="estilos.css">
-<link rel="alternate" hreflang="es" href="index.html">
-<link rel="alternate" hreflang="ca" href="inici.html">
-<link rel="alternate" hreflang="en" href="home.html">
+<link rel="preload" as="image" href="img/capturas/es/02-afinidad.webp" type="image/webp">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pisalia">
+<meta property="og:title" content="Pisalia: habitación y compañeros de piso por afinidad">
+<meta property="og:description" content="Busca habitación o compañeros de piso y mira vuestra afinidad de convivencia antes de escribir. Piso juntos, visitas y avisos contra estafas. Gratis.">
+<meta property="og:url" content="https://pisalia.app/">
+<meta property="og:image" content="https://pisalia.app/img/og-es.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pisalia: encuentra habitación y compañeros de piso por afinidad. Captura de la lista de personas con su afinidad.">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="ca_ES">
+<meta property="og:locale:alternate" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pisalia: habitación y compañeros de piso por afinidad">
+<meta name="twitter:description" content="Busca habitación o compañeros de piso y mira vuestra afinidad de convivencia antes de escribir. Piso juntos, visitas y avisos contra estafas. Gratis.">
+<meta name="twitter:image" content="https://pisalia.app/img/og-es.png">
+<meta name="twitter:image:alt" content="Pisalia: encuentra habitación y compañeros de piso por afinidad. Captura de la lista de personas con su afinidad.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://pisalia.app/#web", "name": "Pisalia", "url": "https://pisalia.app/", "inLanguage": ["es", "ca", "en"]}, {"@type": "MobileApplication", "@id": "https://pisalia.app/#app", "name": "Pisalia", "url": "https://pisalia.app/", "description": "Busca habitación o compañeros de piso y mira vuestra afinidad de convivencia antes de escribir. Piso juntos, visitas y avisos contra estafas. Gratis.", "operatingSystem": "Android", "applicationCategory": "LifestyleApplication", "inLanguage": ["es", "ca", "en"], "image": "https://pisalia.app/img/icono-192.png", "screenshot": "https://pisalia.app/img/capturas/es/02-afinidad.webp", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}}]}</script>
 </head>
-<body>
+<body class="inicio">
 <a class="saltar" href="#contenido">Saltar al contenido</a>
 <header class="cabecera">
 <div class="envoltura">
@@ -25,15 +50,114 @@
 </header>
 <main id="contenido" tabindex="-1">
 <div class="envoltura">
-<section class="portada">
-<svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><rect width="120" height="120" rx="27" fill="#E8264F"/><path d="M24 56 60 27l36 29" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="47" cy="64" r="10.5" fill="#FFFFFF"/><path d="M29 94c2.4-11.5 9-17.5 18-17.5s15.6 6 18 17.5z" fill="#FFFFFF"/><circle cx="73" cy="64" r="10.5" fill="#FFC2CF"/><path d="M55 94c2.4-11.5 9-17.5 18-17.5s15.6 6 18 17.5z" fill="#FFC2CF"/></svg>
-<h1>Pisalia</h1>
-<p class="entradilla">La app para encontrar habitación y compañeros de piso que encajan con tu forma de vivir. En castellano, catalán e inglés.</p>
+<section class="heroe" aria-labelledby="titulo">
+<div class="heroe-texto">
+<p class="antetitulo">La app para compartir piso</p>
+<h1 id="titulo">Encuentra habitación y gente con la que convivir bien</h1>
+<p class="entradilla">Haz el test de convivencia y mira tu afinidad con cada persona antes de escribirle. Para gente de 18 a 30 años que busca habitación o a alguien para su piso. Empezamos por Cataluña.</p>
+<ul class="sellos" aria-label="En resumen"><li>Gratis y sin publicidad</li><li>En castellano, catalán e inglés</li><li>Solo para mayores de 18 años</li></ul>
+<div class="acciones" id="google-play">
+<!-- GOOGLE PLAY: lo pone scripts/web-portada/portada.py (PLAY_URL). Sin dirección, «Próximamente», sin enlace ni insignia. -->
+<p class="pronto"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span><strong>Próximamente en Google Play</strong><span>Primero en Android. En iPhone, más adelante.</span></span></p>
+<a class="boton" href="mailto:info@pisalia.app?subject=Quiero%20probar%20la%20beta%20de%20Pisalia">Quiero probar la beta</a>
+</div>
+<p class="nota-cta">Pronto abriremos una prueba cerrada en Android para mayores de 18 años en España: escríbenos y te avisamos.</p>
+</div>
+<div class="heroe-img">
+<img src="img/capturas/es/02-afinidad.webp" alt="Pantalla de Personas en Android: gente que busca piso en Granollers, cada persona con su porcentaje de afinidad y lo que tenéis en común. Perfiles de ejemplo." width="540" height="960" fetchpriority="high" decoding="async">
+</div>
 </section>
 <div class="aviso beta">
-<p><strong>Pisalia está en beta.</strong> Los demás perfiles y anuncios son de ejemplo, las verificaciones son simuladas y tus datos se guardan solo en tu móvil: Pisalia todavía no tiene servidores. Solo para mayores de 18 años.</p>
+<p><strong>Pisalia está en beta.</strong> Los demás perfiles y anuncios son de ejemplo, las comprobaciones son simuladas y tus datos se guardan solo en tu móvil: Pisalia todavía no tiene servidores.</p>
 </div>
-<h2>Información y ayuda</h2>
+
+<section class="seccion" id="como-funciona" aria-labelledby="como">
+<h2 id="como">Cómo funciona, en 3 pasos</h2>
+<ol class="pasos grandes">
+<li><strong>Elige qué buscas.</strong> Una habitación, personas para compartir piso, alguien para la habitación libre de tu piso o inquilinos para tu piso.</li>
+<li><strong>Haz el test de convivencia.</strong> 12 preguntas y una opcional sobre horarios, orden, limpieza, visitas, ruido, mascotas o presupuesto. Marca lo que es muy importante para ti y lo que te da igual.</li>
+<li><strong>Mira tu afinidad y escribe.</strong> Cada persona sale con vuestra afinidad y lo que tenéis en común, y cada anuncio, con cuántas de tus preferencias cumple. Envía una solicitud: si la aceptan, hacéis match y se abre el chat.</li>
+</ol>
+</section>
+
+<section class="seccion" aria-labelledby="para">
+<h2 id="para">Para quien busca y para quien anuncia</h2>
+<div class="dos">
+<div class="tarjeta">
+<h3>Si buscas habitación o compañeros de piso</h3>
+<ul class="lista">
+<li>Personas que buscan piso cerca de ti, con vuestra afinidad y lo que tenéis en común.</li>
+<li>Habitaciones en lista o en el mapa, con filtros por requisitos y preferencias.</li>
+<li>El coste real de entrar en cada anuncio: alquiler, gastos, fianza y coste inicial estimado. Lo que falta sale como «No indicado».</li>
+<li>Visitas: elige una de las horas que ofrece quien anuncia o propón otra.</li>
+<li><strong>Piso juntos:</strong> con alguien con quien tienes match, buscad piso con vuestro presupuesto y zonas, votad los pisos, comentadlos y enviad una solicitud conjunta.</li>
+</ul>
+</div>
+<div class="tarjeta">
+<h3>Si alquilas una habitación o un piso</h3>
+<ul class="lista">
+<li>Publica tu habitación o tu piso con fotos. Ponlo en pausa, renuévalo o márcalo como alquilado.</li>
+<li>Mira a cada candidato con su afinidad y los requisitos que cumple, y acéptalo o recházalo.</li>
+<li>Agenda: ofrece las horas en que se puede visitar el piso y organiza las visitas.</li>
+<li>Al publicar, la app no deja pedir lo que la ley no permite cobrar al inquilino, como los honorarios de la agencia.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section class="seccion" aria-labelledby="capturas">
+<h2 id="capturas">Así es Pisalia</h2>
+<p class="nota" id="nota-capturas">Capturas de la app en Android, con perfiles y anuncios de ejemplo de la beta.</p>
+<div class="carrusel" role="region" aria-label="Capturas de la app (desliza para ver más)" tabindex="0">
+<ul>
+<li><img src="img/capturas/es/01-estilo.webp" alt="«Descubre tu estilo de convivencia»: el final del test, con tu estilo y tres rasgos, y las primeras habitaciones con su afinidad." width="540" height="960" loading="lazy" decoding="async"></li>
+<li><img src="img/capturas/es/03-costes.webp" alt="«El coste real de entrar, antes de visitar»: alquiler, gastos, fianza, honorarios y coste inicial estimado de un anuncio, con la media de la zona." width="540" height="960" loading="lazy" decoding="async"></li>
+<li><img src="img/capturas/es/04-estafa.webp" alt="«Te avisamos si un mensaje parece una estafa»: en el chat, quien anuncia pide una señal antes de la visita y la app avisa de que pide dinero antes de ver el piso." width="540" height="960" loading="lazy" decoding="async"></li>
+<li><img src="img/capturas/es/05-visita.webp" alt="«Queda para la visita sin dar tu teléfono»: un chat con la visita confirmada y el consejo de no pagar nada antes de ver el piso y firmar el contrato." width="540" height="960" loading="lazy" decoding="async"></li>
+<li><img src="img/capturas/es/06-piso-juntos.webp" alt="«Buscad piso juntos y votad los que os gustan»: pisos guardados por dos personas, con el voto de cada una, comentarios y el aviso de que uno se pasa del presupuesto." width="540" height="960" loading="lazy" decoding="async"></li>
+<li><img src="img/capturas/es/07-solicitudes.webp" alt="«¿Alquilas? Mira qué requisitos cumple cada persona»: las solicitudes de un propietario, con los requisitos que cumple cada candidato y una visita propuesta." width="540" height="960" loading="lazy" decoding="async"></li>
+<li><img src="img/capturas/es/08-idiomas.webp" alt="«En castellano, catalán e inglés»: el perfil de una persona en modo oscuro y con la app en catalán, con vuestra afinidad y su explicación." width="540" height="960" loading="lazy" decoding="async"></li>
+</ul>
+</div>
+</section>
+
+<section class="seccion" id="seguridad" aria-labelledby="seg">
+<h2 id="seg">Seguridad y confianza</h2>
+<ul class="grupo">
+<li><h3>Avisos contra estafas en el chat</h3><p>El chat te avisa si un mensaje se parece a una estafa típica, como pedir dinero antes de la visita, o si vas a enviar un DNI, un IBAN o una tarjeta.</p></li>
+<li><h3>Lista de seguridad antes de pagar</h3><p>Seis comprobaciones que marcas tú antes de pagar nada, con un consejo para cada una.</p></li>
+<li><h3>Denunciar y bloquear</h3><p>Desde cualquier perfil, anuncio o chat, sin avisar a la otra persona. En la beta, las denuncias se quedan en tu móvil y todavía no las revisa nadie: si quieres que veamos una, puedes enviárnosla por correo.</p></li>
+<li><h3>Revisión de los anuncios</h3><p>Cuando Pisalia tenga servidor, una persona revisará cada anuncio antes de publicarlo. En la beta, los anuncios que ves son de ejemplo y los tuyos se quedan en tu móvil.</p></li>
+<li><h3>Pisalia no cobra ni gestiona pagos</h3><p>Ni alquileres, ni fianzas, ni señales. No pagues nada sin haber visto el piso y firmado el contrato.</p></li>
+<li><h3>Tu teléfono, para ti</h3><p>Habláis por el chat de Pisalia y quedáis para la visita sin dar el número.</p></li>
+</ul>
+<p class="nota">Lee los <a href="soporte.html#seguridad">consejos contra las estafas de alquiler</a>.</p>
+<h3 class="subtitulo">Tus datos</h3>
+<div class="tarjeta"><p>En la beta, lo que pones en la app se guarda solo en tu móvil. Pisalia no tiene publicidad, y esta web no usa cookies ni analítica. Lo explica la <a href="privacidad.html">política de privacidad</a>.</p></div>
+</section>
+
+<section class="seccion" id="preguntas" aria-labelledby="faq">
+<h2 id="faq">Preguntas frecuentes</h2>
+<div class="preguntas">
+<details><summary>¿Cuánto cuesta?</summary><p>Nada. Pisalia es gratis y no tiene publicidad.</p></details>
+<details><summary>¿Cuándo puedo descargarla?</summary><p>Pisalia saldrá primero en Android, en Google Play. Pronto abriremos una prueba cerrada: si tienes un móvil Android, eres mayor de 18 años y vives en España, escríbenos a <a href="mailto:info@pisalia.app?subject=Consulta%20sobre%20Pisalia">info@pisalia.app</a> y te avisaremos cuando puedas probarla. La versión para iPhone llegará más adelante.</p></details>
+<details><summary>¿Dónde funciona?</summary><p>Pisalia es para toda España, pero empezamos por Cataluña. En la beta, los perfiles y anuncios de ejemplo están en la provincia de Barcelona.</p></details>
+<details><summary>¿Qué es la afinidad?</summary><p>Un porcentaje que compara vuestras respuestas al test de convivencia y tiene en cuenta lo que cada persona marca como muy importante. Te explica lo que tenéis en común y en qué os diferenciáis. Es una orientación, no una garantía.</p></details>
+<details><summary>¿Qué es Piso juntos?</summary><p>Si has hecho match con alguien y queréis compartir piso, podéis buscar a la vez: con vuestro presupuesto, zonas y fechas, guardáis pisos, los votáis, los comentáis y enviáis una solicitud conjunta a quien anuncia.</p></details>
+<details><summary>¿Pisalia cobra o gestiona el alquiler?</summary><p>No. Pisalia solo pone en contacto a las personas: no cobra ni gestiona alquileres, fianzas ni señales, y no es parte del contrato.</p></details>
+<details><summary>¿Quién puede usarla?</summary><p>Solo mayores de 18 años. Está pensada sobre todo para gente joven que estudia o trabaja y busca habitación o compañeros de piso.</p></details>
+<details><summary>¿Cómo borro mi cuenta?</summary><p>En la app: <strong>Perfil</strong> → <strong>Eliminar mi cuenta</strong>. Si ya no tienes la app, puedes pedirlo por correo: lo explicamos en <a href="borrar-cuenta.html">Borrar tu cuenta</a>.</p></details>
+</div>
+<p class="nota">¿Más dudas? Mira el <a href="soporte.html">soporte</a> o escríbenos a <a href="mailto:info@pisalia.app?subject=Consulta%20sobre%20Pisalia">info@pisalia.app</a>.</p>
+</section>
+
+<section class="seccion cierre" aria-labelledby="cierre">
+<h2 id="cierre">¿Quieres probarla antes que nadie?</h2>
+<p>Escríbenos a <a href="mailto:info@pisalia.app?subject=Consulta%20sobre%20Pisalia">info@pisalia.app</a> desde el correo de tu cuenta de Google y te avisaremos cuando abramos la prueba cerrada de Android.</p>
+</section>
+
+<section class="seccion" aria-labelledby="ayuda">
+<h2 id="ayuda">Información y ayuda</h2>
 <ul class="enlaces">
 <li><a href="privacidad.html"><strong>Política de privacidad</strong><span>Qué datos usa Pisalia y cuáles son tus derechos</span></a></li>
 <li><a href="borrar-cuenta.html"><strong>Borrar tu cuenta</strong><span>Desde la app o pidiéndolo por correo, sin la app</span></a></li>
@@ -41,7 +165,7 @@
 <li><a href="condiciones.html"><strong>Condiciones de uso y normas</strong><span>Lo que aceptas al usar Pisalia</span></a></li>
 <li><a href="aviso-legal.html"><strong>Datos del titular</strong><span>Quién es el titular de Pisalia y cómo contactar</span></a></li>
 </ul>
-<p class="nota">Pisalia es una app para Android (Google Play) e iPhone (App Store).</p>
+</section>
 </div>
 </main>
 <footer class="pie">
